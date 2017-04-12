@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1491220598 source:c:\users\shivang singh\desktop\opencv\main.cpp
+	"core.hpp"
+	"highgui.hpp"
+	"imgcodecs.hpp"
+	"imgproc.hpp"
+	<windows.h>
+	<conio.h>
+	<iostream>
+
