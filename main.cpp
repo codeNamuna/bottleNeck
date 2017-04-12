@@ -12,57 +12,6 @@ using namespace std;
 
 int main()
 {
-    /*Mat img;
-    img = imread("C:\\Users\\Shivang Singh\\Desktop\\pic.jpg",CV_LOAD_IMAGE_GRAYSCALE);
-    img = Mat(500,300,CV_8UC3, Scalar(0,0,100));
-
-    if(img.empty())
-    {
-        cout<<"unable to load image";
-        exit(1);
-    }
-
-
-    imshow("Original Image", img);
-    waitKey();*/
-
-
-
-    /*
-    //VideoCapture vc("C:\\Users\\Shivang Singh\\Desktop\\sample.mp4");
-    VideoCapture vc(1);
-
-    if(!vc.isOpened()){
-        cout<<"unable to open video file";
-        exit(1);
-    }
-
-    //double fps = vc.get(CV_CAP_PROP_FPS);
-    //cout<<"fps: "<<fps;
-
-    double width = vc.get(CV_CAP_PROP_FRAME_WIDTH);
-    double height = vc.get(CV_CAP_PROP_FRAME_HEIGHT);
-
-    cout<<width<<" "<<height;
-
-    namedWindow("lalutar",CV_WINDOW_AUTOSIZE);
-
-    while(1){
-        Mat img;
-        bool success = vc.read(img);
-
-        if(!success){
-            cout<<"unable to read frame";
-        }
-
-        else{
-            imshow("lalutar",img);
-        }
-
-        if(waitKey(30)==27)
-            break;
-    }*/
-
 
     VideoCapture vid(1);
     if(!vid.isOpened()){
@@ -171,22 +120,22 @@ int main()
             current=current_new;
             switch(current_new){
                 case 0:
-                    PlaySound(TEXT("C:\\Users\\Shivang Singh\\Desktop\\opencv\\piano notes\\1.wav"), NULL,SND_ASYNC);
+                    PlaySound(TEXT("C:\\Users\\codeNamuna\\Desktop\\opencv\\piano notes\\1.wav"), NULL,SND_ASYNC);
                     break;
                 case 1:
-                    PlaySound(TEXT("C:\\Users\\Shivang Singh\\Desktop\\opencv\\piano notes\\2.wav"), NULL,SND_ASYNC);
+                    PlaySound(TEXT("C:\\Users\\codeNamuna\\Desktop\\opencv\\piano notes\\2.wav"), NULL,SND_ASYNC);
                     break;
                 case 2:
-                    PlaySound(TEXT("C:\\Users\\Shivang Singh\\Desktop\\opencv\\piano notes\\3.wav"), NULL,SND_ASYNC);
+                    PlaySound(TEXT("C:\\Users\\codeNamuna\\Desktop\\opencv\\piano notes\\3.wav"), NULL,SND_ASYNC);
                     break;
                 case 3:
-                    PlaySound(TEXT("C:\\Users\\Shivang Singh\\Desktop\\opencv\\piano notes\\4.wav"), NULL,SND_ASYNC);
+                    PlaySound(TEXT("C:\\Users\\codeNamuna\\Desktop\\opencv\\piano notes\\4.wav"), NULL,SND_ASYNC);
                     break;
                 case 4:
-                    PlaySound(TEXT("C:\\Users\\Shivang Singh\\Desktop\\opencv\\piano notes\\5.wav"), NULL,SND_ASYNC);
+                    PlaySound(TEXT("C:\\Users\\codeNamuna\\Desktop\\opencv\\piano notes\\5.wav"), NULL,SND_ASYNC);
                     break;
                 case 5:
-                    PlaySound(TEXT("C:\\Users\\Shivang Singh\\Desktop\\opencv\\piano notes\\6.wav"), NULL,SND_ASYNC);
+                    PlaySound(TEXT("C:\\Users\\codeNamuna\\Desktop\\opencv\\piano notes\\6.wav"), NULL,SND_ASYNC);
                     break;
                 case 6:
                     PlaySound(TEXT("C:\\Users\\Shivang Singh\\Desktop\\opencv\\piano notes\\7.wav"), NULL,SND_ASYNC);
